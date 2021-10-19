@@ -1,0 +1,158 @@
+/* remove basic browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font for the whole thing */
+  font-family: "Lato", sans-serif;
+}
+
+
+/* a bit bigger heading */
+header {
+  font-size: 1.6rem;
+}
+
+body {
+  background-color: #f5f5f5;
+
+  /* all text dark grey */
+  color: #535050;
+  min-height: 100vh;
+}
+
+/* center  */
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+/* get the ugly border away from the input*/
+input:focus {
+  outline: none;
+}
+
+
+form button {
+  color: #535050;
+  background: #cecaca;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 0.4rem;
+}
+
+/* add to list button on hover */
+form button:hover {
+  background: #727171;
+  color: white;
+}
+
+/* if input not correct */
+#feedbacktoDoInput{
+  color: red;
+  font-size: 1.2rem;
+  margin-left: 0.7rem;
+}
+
+
+
+#listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#toDoList {
+  /* The minimun width of the field */
+  min-width: 40%;
+  list-style: none;
+}
+
+/* the input tasks */
+.todo {
+  margin: 0.3rem;
+  background-color: rgb(233, 230, 232);
+  padding: 0.3rem;
+  font-size: 1.1rem;
+  /*   in a row */
+  display: flex;
+  /* not next to eachother */
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease;
+  border-radius: 10px;
+}
+
+.todo li {
+  /* pushes the buttons to the end, next to each other */
+  flex: 1;
+}
+
+.checkButton,
+.deleteButton {
+  color: #535050;
+  background: #cecaca;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* same hover effect as on add button above */
+.deleteButton:hover,
+.checkButton:hover {
+  background: #727171;
+  color: white;
+}
+
+/* so that you can push the button on the icon */
+.fa-trash,
+.fa-check-circle {
+  pointer-events: none;
+}
+
+/* checked/done item */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* do we need to delete all preset styles?*/
+/* select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+} */
+
+/* for the div container above select */
+.lists {
+  margin: 1rem;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+/* this is for the select itself*/
+select {
+  font-size: 1.2rem;
+  color: #535050;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+}

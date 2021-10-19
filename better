@@ -1,0 +1,5 @@
+I have the same lines of code in the js file a few times. It would be cleaner to have it only once as a function, and then use it inside the other functions?
+
+
+the completed items are not checked after refreshing, so they return as uncompleted. 
+
