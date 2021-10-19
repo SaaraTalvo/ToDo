@@ -1,2 +1,2 @@
 # ToDo
-ToDo-app
+ToDo-app, school assignment
